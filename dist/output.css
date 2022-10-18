@@ -563,6 +563,10 @@ video {
   height: 100vh;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .flex-col {
   flex-direction: column;
 }
