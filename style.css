@@ -4,3 +4,29 @@ html,
 body {
   margin: 0;
 }
+
+html {
+  background:  url("./assets/main-banner.png") no-repeat center center fixed; 
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Permanent Marker', cursive;
+}
+
+main {
+  width: 100vw;
+  margin: auto;
+}
+
+section {
+  padding: 20px;
+}
+
+ h1 {
+  font-family: 'Six Caps', sans-serif;
+}
+
+.name{
+}
