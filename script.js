@@ -1,4 +1,4 @@
-gsap.to("#fake-markee", { x: -600, duration: 20, repeat: -1, ease: "linear" });
+gsap.to("#fake-markee", { x: -2000, duration: 60, repeat: -1, ease: "linear" });
 
 // gsap.fromTo(
 //   "#first, #second",
