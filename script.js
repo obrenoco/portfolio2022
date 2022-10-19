@@ -1,5 +1,10 @@
-gsap.to("#fake-markee", { x: -2000, duration: 60, repeat: -1, ease: "linear" });
+let markee = document.querySelector("#fake-markee");
 
+const tl = gsap.timeline();
+tl.to("#fake-markee", { x: -2000, duration: 60, repeat: -1, ease: "linear" });
+
+markee.addEventListener("mouseover", () => tl.pause());
+markee.addEventListener("mouseleave", () => tl.play());
 // gsap.fromTo(
 //   "#first, #second",
 //   { backdropFilter: "brightness(.9)" },

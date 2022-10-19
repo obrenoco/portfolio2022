@@ -607,6 +607,10 @@ video {
   width: fit-content;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .flex-col {
   flex-direction: column;
 }
