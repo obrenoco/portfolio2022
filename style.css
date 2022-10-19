@@ -16,6 +16,10 @@ html {
   font-family: "Sarpanch", cursive;
 }
 
+body {
+  overflow: hidden;
+}
+
 main {
   width: 100vw;
   margin: auto;
