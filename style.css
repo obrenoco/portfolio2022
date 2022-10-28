@@ -6,18 +6,8 @@ body {
 }
 
 html {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./assets/main-banner.png") no-repeat 80% center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: black;
   font-family: "Sarpanch", cursive;
-}
-
-body {
-  overflow: hidden;
 }
 
 main {
@@ -29,41 +19,44 @@ section {
   padding: 20px;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: "Six Caps", sans-serif;
+  font-family: "Six Caps", sans-serif;
+  font-size: 8rem;
+  line-height: 1em;
 }
 
-nav {
-  position: relative;
-  padding: 0;
-  color: #7f8b90;
-  border-top: 1px dotted #aaa;
-  border-bottom: 1px dotted #aaa;
+p {
+  font-family: "Gloria Hallelujah", cursive;
 }
 
-nav div:before {
-  content: "";
-  display: block;
-  background: linear-gradient(
-    to right top,
-    #cddc39 0%,
-    #03a9f4 50%,
-    #e6f0f5 50%
-  );
-  height: calc(100% - 100vh + 6px);
+progress {
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: 4px;
+  border: none;
+  background: transparent;
 }
-nav div:after {
-  content: "";
-  display: block;
-  background: #e6f0f5;
-  height: calc(100vh - 6px);
-  width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
-  left: 0;
+progress::-webkit-progress-bar {
+  background: transparent;
+}
+progress::-webkit-progress-value {
+  background: white;
+  background-attachment: fixed;
+}
+progress::-moz-progress-bar {
+  background: white;
+  background-attachment: fixed;
+}
+
+#main,
+#contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/main-banner.png") no-repeat 80% center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

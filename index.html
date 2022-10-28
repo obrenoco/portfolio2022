@@ -6,10 +6,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;700&family=Six+Caps&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Six+Caps&display=swap"
       rel="stylesheet"
     />
-    <meta name="theme-color" content="#415483" />
+    <meta name="theme-color" content="#000000" />
     <meta
       name="viewport"
       content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
@@ -29,11 +29,29 @@
 
     <title>Breno Romeiro 👋</title>
   </head>
-  <body class="text-white h-screen overflow-x-hidden">
+  <body class="text-white h-screen w-screen overflow-x-hidden">
+    <header
+      class="w-full h-14 bg-white bg-opacity-30 fixed top-0 flex flex-col items-end justify-between text-white font-bold"
+    >
+      <div class="w-full flex items-center justify-between h-full px-6">
+        <a href="#">Breno</a>
+        <nav>
+          <ul class="flex gap-4">
+            <li>
+              <a href="">Work</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <progress max="100" value="0"></progress>
+    </header>
     <main class="h-auto">
-      <p
+      <!-- <p
         id="fake-markee"
-        class="fixed whitespace-nowrap cursor-pointer top-4 font-bold"
+        class="absolute whitespace-nowrap cursor-pointer top-4 font-bold"
       >
         Front End - UX/UI - React - Testing - JavaScript - TypeScript - Figma -
         HTML - CSS - Tailwind - Front End - UX/UI - React - Testing - JavaScript
@@ -55,34 +73,110 @@
         HTML - CSS - Tailwind - Front End - UX/UI - React - Testing - JavaScript
         - TypeScript - Figma - HTML - CSS - Tailwind - Front End - UX/UI - React
         - Testing - JavaScript - TypeScript - Figma - HTML - CSS - Tailwind -
-      </p>
-      <section
-        id="first"
-        class="h-screen flex flex-col justify-center md:items-start md:justify-end"
-      >
-        <div
-          id="first-block"
-          class="flex flex-col gap-4 md:flex md:w-full md:justify-between md:items-end md:flex-row"
-        >
+      </p> -->
+      <section id="main" class="h-screen flex flex-col justify-center">
+        <div id="first-block" class="flex flex-col gap-4">
           <!-- <div class="name">
             <p>Creative</p>
           </div> -->
-          <h1 class="flex flex-col text-[10rem] leading-[.9em] md:text-[20rem]">
-            <span>Breno</span>
-            <span>Romeiro</span>
+          <h1 class="w-full text-center text-[10rem] leading-[.9em]">
+            Front End
           </h1>
+          <div class="w-full flex justify-center">
+            <a
+              href=""
+              class="w-fit border-white border-2 px-4 rounded-full text-xl font-bold h-fit hover:bg-white hover:text-black"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="intro" class="h-screen">
+        <h2 class="w-full">
+          <div>Hi,</div>
+          <div class="ml-4">I'm <span>Breno</span></div>
+        </h2>
+
+        <img
+          src="./assets/images/robot.png"
+          alt=""
+          class="w-2/3 ml-auto mr-auto"
+        />
+      </section>
+
+      <section id="projects" class="p-0 py-4">
+        <div class="w-full text-right pr-6 mb-9">
+          <p class="w-28 ml-auto">Those are my projects</p>
+        </div>
+        <ul
+          class="w-full text-2xl [&>li]:w-full [&>li]:flex [&>li]:justify-between [&>li]:items-center [&>li]:border-t-2 [&>li]:border-white [&>li]:px-8 [&>li]:py-2"
+        >
+          <li>
+            <p>Lorem</p>
+            <p>2022</p>
+          </li>
+          <li>
+            <p>Lorem</p>
+            <p>2022</p>
+          </li>
+          <li>
+            <p>Lorem</p>
+            <p>2022</p>
+          </li>
+          <li>
+            <p>Lorem</p>
+            <p>2022</p>
+          </li>
+        </ul>
+        <div class="border-t-2 border-white">
+          <p class="w-fit ml-auto mr-auto mt-4">Cool,hm?</p>
+        </div>
+      </section>
+
+      <section id="contact" class="h-[90vh] flex flex-col gap-20">
+        <div>
+          <h3>
+            <div>Let's</div>
+            <div>Connect</div>
+          </h3>
+          <p class="w-32">tell me about your projects</p>
+        </div>
+        <div class="w-full flex justify-center">
           <a
             href=""
-            class="w-fit border-white border-2 px-4 rounded-full text-xl font-bold h-fit hover:bg-white hover:text-black md:text-4xl md:p-10"
+            class="w-fit border-white border-2 px-4 rounded-full text-4xl font-bold h-fit hover:bg-white hover:text-black"
           >
             Contact
           </a>
         </div>
       </section>
 
-      <!-- <section id="second" class="h-screen flex items-center justify-centers">
-        <p class="m-auto text-4xl">😇</p>
-      </section> -->
+      <footer class="w-full h-16">
+        <ul class="flex items-center justify-center gap-6 h-inherit">
+          <li>
+            <a href="#">
+              <img src="./assets/images/logo-github.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/images/logo-linkedin.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/images/logo-mail.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/images/logo-twitter.png" alt="" />
+            </a>
+          </li>
+        </ul>
+      </footer>
     </main>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>

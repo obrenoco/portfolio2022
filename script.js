@@ -1,10 +1,18 @@
-let markee = document.querySelector("#fake-markee");
+gsap.registerPlugin(ScrollTrigger);
+gsap.to("progress", {
+  value: 100,
+  ease: "none",
+  scrollTrigger: { scrub: 0.3, marker: true },
+});
 
-const tl = gsap.timeline();
-tl.to("#fake-markee", { x: -2000, duration: 60, repeat: -1, ease: "linear" });
+// let markee = document.querySelector("#fake-markee");
 
-markee.addEventListener("mouseover", () => tl.pause());
-markee.addEventListener("mouseleave", () => tl.play());
+// const tl = gsap.timeline();
+// tl.to("#fake-markee", { x: -2000, duration: 60, repeat: -1, ease: "linear" });
+
+// markee.addEventListener("mouseover", () => tl.pause());
+// markee.addEventListener("mouseleave", () => tl.play());
+
 // gsap.fromTo(
 //   "#first, #second",
 //   { backdropFilter: "brightness(.9)" },

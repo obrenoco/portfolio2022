@@ -1,7 +1,9 @@
 module.exports = {
   content: ["./**/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      height: { inherit: "inherit" },
+    },
   },
   plugins: [],
 };
